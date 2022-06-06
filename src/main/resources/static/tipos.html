@@ -3,9 +3,148 @@
     <head>
         <title>Tipos de bases de datos NoSQL</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pagina de leccion 2"/>
+        <meta name="keywords" content="html5, css3, web, fidelitas"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>Tipos de bases de datos NoSQL</div>
-    </body>
-</html>
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav-link logo">Tipos de bases de datos NoSQL</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="index.html">Pagina principal</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="CouchDB.html">CouchDB</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="MongoDB.html">MongoDB</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Neo4j.html">Neo4j</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Redis.html">Redis</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ApacheCassandra.html">ApacheCassandra</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ventajasdesventajas.html">Ventajas y desventajas</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="evaluacion.html">Evaluacion</a></li>
+                </ul>
+            </nav>
+        </header>  
+        <aside id="barraLateral">
+            <br>
+            <h2>Bases de datos NoSQL</h2>
+            <br>
+            <p>
+                Ya conocimos algunos nombres famosos de las Bases de Datos NoSQL,
+                pero es importante destacar que existe una clasificación que debemos conocer
+                para entender cómo estas BBDD están construidas y nos pueden ser de utilidad.
+                Veamos cuales son las principales clasificaciones:
+            </p>
+            <br>
+            <br>
+            <img src="images/tipos.png" width="425"/>
+        </aside>
+        <section id="contenido">
+            <a name="arriba"></a>
+            <h2>Tipos</h2>
+            <article>
+
+                <header><h3>Bases de datos documentales</h3></header>
+                <a href="#abajo">Ir abajo</a>
+
+                <p class="descripcion">
+                    <cite>Una base de datos documental u orientada a documentos,
+                        es un tipo de BBDD NoSQL que orienta su funcionamiento a datos
+                        alojados en documentos o tiendas de documentos. Estas bases de datos se utilizan 
+                        para almacenar, recuperar y administrar datos semiestructurados.<cite>
+                            <br>
+                            Las bases de datos documentales almacenan cada uno de los registros y
+                            los datos asociados en un solo documento. Cada documento contiene datos
+                            semiestructurados que pueden ser consultados con diferentes herramientas 
+                            de análisis. Estas bases de datos ofrecen mucha flexibilidad, escritura rápida,
+                            y consultas rápidas gracias a su gran capacidad de indexación. Entre las BBDD
+                            documentales más reconocidas encontramos la ya conocida por nosotros a MongoDb, de 10gen, y CouchDB, de Apache.
+                            </p>
+
+                            </article> 
+                            <article>
+                                <header><h3>Bases de datos en orientadas a grafos</h3></header>
+                                <p class="descripcion">
+                                    Las bases de datos orientadas a grafos son excelentes herramientas para trabajar datos complejos.
+                                    Estas BBDD nos permite darle representar los datos en estructuras de grafos. Esto es de gran utilidad 
+                                    cuando los datos que vamos a procesar tienen altos niveles de interrelación.  Estas versátiles bases
+                                    de datos, nos permite ejecutar consultas y almacenamiento de datos de cualquier característica sin
+                                    siquiera preocuparnos por el volumen de los datos.<br>
+                                    Gozan de un excepcional rendimiento para responder de forma eficiente al análisis y consulta
+                                    de volúmenes gigantescos de datos. Ofrece también una diversidad de métodos analíticos y de consulta que la
+                                    convierten en una de las opciones más flexibles en NoSQL. Es bastante frecuente conseguir la implementación 
+                                    de este modelo de BBDD en estructuras web de blogs. Twitter es uno de los casos más relevantes donde una BBDD
+                                    de Grafos está relacionada.<br>
+                                    Las Bases de Datos orientadas a grafos también tiene otras funcionalidades que no te puedes perder. 
+                                    Entre las marcas más reconocidas está nuestra ya conocida Neo4j, pero esta no es la única. 
+                                    También están las conocidas HyperGraphDB, InfoGrid, AllegroGraph, InfiniteGraph, Sones y DEX/Sparksee.<br>
+                            </article> 
+                            <article>
+                                <header><h3>Bases de datos clave/valor</h3></header>
+                                <p class="descripcion">
+                                    <cite>Las bases de datos clave valor son modelos no relacionales que utilizan un método simple de almacenamiento de datos.
+                                        Este tipo de BBDD toma los datos como un conjunto de pares “clave-valor” en los que las claves cumplen 
+                                        funciones de identificadores únicos.</cite><br>
+                                    Las claves o lo valores pueden ser cualquier tipo de datos. Pueden ser objetos simples o complejos. 
+                                    Estas BBDD son altamente divisibles y brindan grandes capacidades de escalabilidad horizontal.<br>
+
+
+                                    Estos modelos de BBDD son uno de los preferidos de los clientes NoSQL,
+                                    porque son simples en cuanto a funcionalidad y brindan alto rendimiento a la hora
+                                    de ejecutar las lecturas y escrituras de datos. Ya hemos dado algunos ejemplos de
+                                    Bases de Datos Clave Valor como Cassandra y Redis, pero es obligatorio expandir la
+                                    lista cuando tenemos importantes BBDD como BigTable de Google, Dynamo de Amazon, 
+                                    Project Voldemort de LinkedIn, OracleNoSQL y Riak.<br>
+                                </p>
+                            </article> 
+                            <article>
+                                <header><h3>Bases de datos orientadas a objetos</h3></header>
+                                <p class="descripcion">
+                                    Como bien lo indica su nombre, las BBDD de este tipo están conformadas por objetos.
+                                    Estos objetos pueden ser de diferentes tipos, sobre los que se definen unas operaciones que 
+                                    determinan sus propiedades de interacción. Las Bases de datos orientadas a objetos han revivido 
+                                    el interés de los usuarios gracias a sus características principales.<br>
+
+                                    Estas BBDD son altamente flexibles y admiten lenguajes de programación como JAVA, Visual Basic o C++. 
+                                    Entre las más Bases de Datos orientadas a objetos más conocidas tenemos a ObjectDB, Zope Object Database, 
+                                    ZooDB, GemStone, Objectivity y Realm.io <br>
+                                </p>
+                            </article>
+                            <article>
+                                <header><h3>Bases de datos tabulares</h3></header>
+                                <p class="descripcion">
+                                    Una BBDD tabular no es más que la estructuración de una BBDD en forma de tabla.
+                                    Incorpora elementos en columnas y líneas. Cada una de las celdas genera intersecciones entre
+                                    las columnas y las líneas. A estas intersecciones se le asignan una numeración única para establecer 
+                                    un orden eficiente de los datos. Están pensadas para grandes volúmenes de datos.<br>
+                                    Estas tienen la capacidad de almacenar gran cantidad de datos dispersos. 
+                                    Entre las principales DDBB de este estilo podemos conseguir a HBase de 
+                                    Apache que es utilizada para soportar el servicio de mensajería de Facebook, t
+                                    ambién a BigTable de Google y la versión abierta llamada LevelDB y a Hypertable. <br>
+                                </p>
+                            </article>
+                            <article>
+                                <header><h3>Bases de datos de Arrays</h3></header>
+                                <p class="descripcion">
+                                    Las Bases de datos arrays sirven para trabar colecciones de datos conocidas como  raster data.
+                                    Sitúan los datos en una cuadricula regular con más de dos dimensiones. Estas bases de datos se
+                                    utilizan para representar simulaciones, sensores y datos estadísticos. Son capaces de manejar
+                                    volúmenes de datos importantes ofreciendo una flexibilidad y escalabilidad.<br>
+
+                                    Estas bases de datos son consideradas una generación tecnológica emergente. 
+                                    De las bases de datos más destacadas que trabajan este modelo podemos
+                                    mencionar a Oracle que ha profundizado sus trabajos en ella y SciDB, de Paradigm4 <br>
+                                </p>
+                            </article>
+                            <a href="#arriba">Ir arriba</a>
+                            <a name="abajo"></a>
+                            </section>
+
+
+                            <footer id="piePagina">
+                                <br>
+
+                                Derechos reservados &COPY; 2022 <address style="display: inline">San Jose</address> <address style="display: inline">Tel 8477-5496</address>
+                            </footer>
+                            </body>
+                            </html>
+                            </html>

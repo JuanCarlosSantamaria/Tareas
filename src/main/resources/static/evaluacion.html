@@ -3,9 +3,51 @@
     <head>
         <title>Bases de datos NoSQL: Evaluacion</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pagina de leccion 2"/>
+        <meta name="keywords" content="html5, css3, web, fidelitas"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>Evaluacion</div>
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav-link logo">Evaluacion</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="index.html">Pagina principal</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="CouchDB.html">CouchDB</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="MongoDB.html">MongoDB</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Neo4j.html">Neo4j</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Redis.html">Redis</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ApacheCassandra.html">ApacheCassandra</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="tipos.html">Tipos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ventajasdesventajas.html">Ventajas y desventajas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside id="barraLateral">
+            <br>
+            <h2>Bases de datos NoSQL</h2>
+            <br>
+            <p>
+              Esto es una evaluacion sobre que tan bueno fue el contenido de la pagina
+            </p>
+            <br>
+            <br>        
+        </aside>
+        <section id="contenido">
+        <h2></h2>
+        <br>
+        <form action="#"> 
+            <label> </label><input type="button" value="Enviar" id="button" /><br>
+            <label>Nombre Completo </label><input type="text" name="text" placeholder="" size="20"><br>
+            <label>Email </label><input type="text" name="email" placeholder=""><br>
+            En una escala del 1-10, que tan satisfecho se encuentra con la pagina? <br>
+            <input type="range" value="" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
+            <output>1-10</output><br>
+            <label> </label><input type="reset" name="reset" value="Limpiar"><br>
+            <label> </label><input type="submit" value="Submit"><br>
+        </form>
+        </section>
+        
     </body>
 </html>

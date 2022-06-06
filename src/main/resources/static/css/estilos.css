@@ -35,7 +35,7 @@
     left: 0;
     height: 81%;
     width: 20%;
-    background-color: #8e27f6;
+    background-color: #00FFFF;
     color: black;
 }
 #contenido {
@@ -44,7 +44,7 @@
     left: 20%;
     height: 81%;
     width: 80%;
-    background-color: #24a1df;
+    background-color: #C0C0C0;
     color: black;
     overflow: auto;
 }
@@ -54,24 +54,24 @@
     left: 0;
     height: 7%;
     width: 100%;
-    background-color: #87f29b;
-    color: black;
+    background-color: green;
+    color: white;
     text-align: center;
 }
 #encabezadoTabla {
-    font-size: 20px;
-    background-color: blue;
-    color: yellow;
+    font-size: 50px;
+    background-color: lightblue;
+    color: black;
 }
 #tablaResumen tr {
-    font-size: 25px;
+    font-size: 50px;
 }
 #tablaResumen tr:nth-child(odd) {
-    background-color: coral;
+    background-color: red;
     color: white;
 }
 #tablaResumen tr:nth-child(even) {
-    background-color: white;
-    color: #87f29b;
+    background-color: red;
+    color: white;
 }
 
